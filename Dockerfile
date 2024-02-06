@@ -1,6 +1,6 @@
 FROM maven:3.2.0-openjdk-21 AS build
 WORKDIR /app
-COPY ../../.. /app/
+COPY  D:/project FSD/portfolio/portfolio
 RUN mvn clean package
 
 #
