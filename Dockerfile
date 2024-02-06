@@ -1,5 +1,5 @@
 # Use an official Maven image as a build stage
-FROM maven:3.8.4-openjdk-21 AS build
+FROM maven:3.8.4-openjdk-17 AS build
 WORKDIR /app
 
 # Copy the entire project to the container
@@ -9,7 +9,7 @@ COPY . .
 RUN mvn clean package
 
 # Use an official OpenJDK image as the final stage
-FROM openjdk:21
+FROM openjdk:17
 WORKDIR /app
 
 # Copy the JAR file from the build stage to the final stage
