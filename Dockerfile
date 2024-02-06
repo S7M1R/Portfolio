@@ -1,5 +1,5 @@
 # Build stage
-FROM maven:4.0.0-openjdk-21 AS build
+FROM maven:3.9.5-openjdk-21 AS build
 WORKDIR /app
 COPY D:/project\ FSD/portfolio/portfolio /app
 COPY D:/project\ FSD/portfolio/portfolio/.mvn /app/.mvn
