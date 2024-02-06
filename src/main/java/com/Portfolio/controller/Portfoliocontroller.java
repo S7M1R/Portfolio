@@ -29,6 +29,16 @@ public class Portfoliocontroller {
         return "http://www.linkedin.com/in/sameeroddin-kazi";
     }
 
+    @RequestMapping("/viewHealthProject")
+    public String viewHealthProject() {
+        return "HealthServices.html";
+    }
+
+    @RequestMapping("/HealthProjectGitHub")
+    public String HealthProjectGitHub() {
+        return "redirect:https://github.com/S7M1R/Health-Services-Application";
+    }
+
     @GetMapping("/downloadCV")
     public ResponseEntity<byte[]> downloadPdf() throws IOException {
         ResponseEntity<byte[]> responseEntity;

@@ -124,3 +124,13 @@
   function redirectToLinkedin(){
     window.location.href = '/redirectToLinkedin';
   }
+
+  function HealthServicesView(){
+    window.location.href = '/viewHealthProject';
+  }
+  function HalthProjectLink(){
+    window.location.href = '/HealthProjectGitHub';
+  }
+  
+  
+  
