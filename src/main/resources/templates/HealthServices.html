@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" th:href="@{/Css/HealthServices.css}">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" th:href="@{/Images/pngwing.com.png}" type="image/x-icon">
+
+    <title>Portfolio</title>
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Sameeroddin</p>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn" onclick="downloadCv()">Git Repository</button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-info">
+                <p>The Health Services Application is designed to provide a seamless and secure experience for users in managing their healthcare needs. With a Microservices Architecture, the project ensures modularity, scalability, and robustness. Users can access features like appointment booking, medicine ordering, and insurance policies through a user-friendly interface. Doctors, on the other hand, can manage appointments, write and read blogs, and monitor their availability slots.
+
+Key features include secure authentication using Spring Security and JWT, circuit breakers for preventing failures, and monitoring performance using Spring Actuator. Data is stored efficiently using MongoDB and MySQL for different services.
+
+The project comprises Microservices such as User Service, Doctor Service, BlogPost Service, Medicine Service, and an API Gateway for centralized access.
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn" onclick="downloadCv()">Git Repository</button>
+            </div>
+            
+            <div class="social_icons">
+                <a href="http://www.linkedin.com/in/sameeroddin-kazi"><div class="icon"><i class="uil uil-linkedin-alt" ></i></div></a>
+                <a href="http://https://github.com/S7M1R"><div class="icon"><i class="uil uil-github-alt"></i></div></a>
+                <a href="#"><div class="icon"><i class="uil uil-twitter-alt"></i></div></a>
+                <a href="#"><div class="icon"><i class="uil uil-whatsapp"></i></div></a>
+            </div>
+          </div>
+          <div class="featured-image" id="im">
+            <div class="image">
+                <img th:src="@{/Images/istockphoto-1275720974-1024x1024.png}" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#Skills" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
+            </a>
+          </div>
+
+       </section>
+
+       <!-- -------------- PROJECT BOX ---------------- -->
+
+       <section class="section" id="projects">
+          <div class="top-header" >
+              <h1>Project Description</h1>
+          </div>
+          <div class="project-container">
+    <div class="project-box">
+        <i class="uil uil-medkit"></i>
+        <h3>Health Services Application</h3>
+        <label>Microservices Architecture Portfolio Project</label>
+        <p>The Health Services Application is designed to provide a seamless and secure experience for users in managing their healthcare needs. With a Microservices Architecture, the project ensures modularity, scalability, and robustness. Users can access features like appointment booking, medicine ordering, and insurance policies through a user-friendly interface. Doctors, on the other hand, can manage appointments, write and read blogs, and monitor their availability slots.</p>
+        <p>Key features include secure authentication using Spring Security and JWT, circuit breakers for preventing failures, and monitoring performance using Spring Actuator. Data is stored efficiently using MongoDB and MySQL for different services.</p>
+        <p>The project comprises Microservices such as User Service, Doctor Service, BlogPost Service, Medicine Service, and an API Gateway for centralized access.</p>
+        <p>Overview:</p>
+        <ul>
+            <li>This project showcases the development of a comprehensive Health Services Application built on a robust Microservices Architecture with synchronous communication using REST API. The technology stack includes Java, Spring Boot, Hibernate, MySQL, MongoDB, and employs a total of 7 Microservices to ensure scalability, modularity, and efficiency.</li>
+            <li>User Service:</li>
+            <li>Doctor Service:</li>
+            <li>BlogPost Service:</li>
+            <li>Medicine Service:</li>
+            <li>API Gateway:</li>
+        </ul>
+        <p>Conclusion:</p>
+        <p>This project demonstrates the implementation of a highly scalable and secure Health Services Application using Microservices Architecture. The use of industry-standard technologies, robust authentication mechanisms, and integrated payment gateways enhance the overall functionality and user experience. The inclusion of resilience measures and monitoring tools ensures the reliability and performance of the application.</p>
+        <div class="nav-button" id="project_btn">
+        <button class="btn" onclick="HalthProjectLink()">Git Repository</button>
+    </div>
+    </div>
+    
+</div>
+          
+       </section>
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i>Email: contact.sameeroddinkazi@gamil.com</p>
+                    <p><i class="uil uil-phone"></i>Cantact No: +91 7620338237</p>
+                </div>
+             </div>
+             <div class="col">
+                <form action="sendEmail" method="post">
+                    <div class="form-control">
+                        <div class="form-inputs">
+                            <input type="text" class="input-field" placeholder="Name" name="Name">
+                            <input type="email" class="input-field" placeholder="Email" name="Email">
+                        </div>
+                        <div class="text-area">
+                            <textarea placeholder="Message" name="Message"></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button class="btn" type="submit">Send <i class="uil uil-message"></i></button>
+                        </div>
+                    </div>
+                </form>
+             </div>
+          </div>
+       </section>
+
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Sameeroddin Kazi</p>
+        </div>
+       
+        <div class="footer-social-icons">
+            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                <div class="icon"><i class="uil uil-github-alt"></i></div>
+                <div class="icon"><i class="uil uil-twitter-alt"></i></div>
+                <div class="icon"><i class="uil uil-whatsapp"></i></div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Sameeroddin Kazi</a> - All rights reserved</p>
+        </div>
+    </footer>
+
+    </div>
+
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+   <script th:src="@{/Javascript/main.js}"></script>
+</body>
+</html>
+
+

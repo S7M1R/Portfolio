@@ -1,0 +1,17 @@
+# Use an official OpenJDK runtime as a base image
+FROM mcr.microsoft.com/windows:ltsc2019:21-jre-slim
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Create a volume for the project directory
+VOLUME ["D:/project FSD/portfolio/portfolio"]
+
+# Copy the packaged JAR file into the container at the working directory
+COPY target/portfolio.jar /app/app.jar
+
+# Expose the port that your Spring Boot application will run on
+EXPOSE 8080
+
+# Specify the command to run on container startup
+CMD ["java", "-jar", "app.jar"]
