@@ -6,7 +6,7 @@ RUN mvn clean package
 #
 # Package stage
 #
-FROM openjdk:21.0.1
+FROM openjdk:21
 WORKDIR /app
 COPY --from=build /app/target/*.jar /app/app.jar
 EXPOSE 8080
