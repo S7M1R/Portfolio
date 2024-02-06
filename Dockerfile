@@ -1,13 +1,13 @@
+# Build stage
 FROM maven:3.2.0-openjdk-21 AS build
 WORKDIR /app
-COPY  D:/project FSD/portfolio/portfolio
-RUN mvn clean package
+COPY D:/project\ FSD/portfolio/portfolio /app
+COPY D:/project\ FSD/portfolio/portfolio/.mvn /app/.mvn
+RUN ./mvnw clean package
 
-#
 # Package stage
-#
-FROM openjdk:21
+FROM openjdk
 WORKDIR /app
 COPY --from=build /app/target/*.jar /app/app.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","app.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
