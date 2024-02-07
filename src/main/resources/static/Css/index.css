@@ -592,7 +592,7 @@ footer{
 }
 
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1500px) {
     body{
         contain:layout;
         display: grid;

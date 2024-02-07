@@ -33,7 +33,7 @@
 
 /* ----- TYPING EFFECT ----- */
    var typingEffect = new Typed(".typedText",{
-      strings : ["Java Full Stack Web Developer","Spring Boot Developer"],
+      strings : ["Java Full Stack Developer","Spring Boot Microservices Developer"],
       loop : true,
       typeSpeed : 100, 
       backSpeed : 50,
@@ -128,9 +128,25 @@
   function HealthServicesView(){
     window.location.href = '/healthServicesApplication';
   }
+  function FlightReservationApplicationView(){
+    window.location.href = '/FlightReservationApplication';
+  }
   function HalthProjectLink(){
     window.location.href = '/HealthProjectGitHub';
   }
+  function RealestateApplicationView(){
+    window.location.href = '/RealEstateApplication';
+  }
+  function chatApplicationView(){
+    window.location.href = '/ChatApplication';
+  }
+  function BlogApplicationView(){
+    window.location.href = '/BloggingApplication';
+  }
+  function WeatherApplicationView(){
+    window.location.href = '/WeatherApplication';
+  }
+
 
   
   

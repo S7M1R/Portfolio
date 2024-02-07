@@ -30,13 +30,63 @@ public class Portfoliocontroller {
     }
 
     @RequestMapping("/healthServicesApplication")
-    public String HealthServicesApplication() {
+    public String HealthServicesApplicationView() {
         return "HealthServices.html";
+    }
+
+    @RequestMapping("/FlightReservationApplication")
+    public String FlightReservationApplicationView() {
+        return "FlightReservationApplication.html";
+    }
+
+    @RequestMapping("/RealEstateApplication")
+    public String RealEstateApplicationView() {
+        return "RealEstateApplication.html";
+    }
+
+    @RequestMapping("/ChatApplication")
+    public String ChatApplicationView() {
+        return "ChatApplication.html";
+    }
+
+    @RequestMapping("/BloggingApplication")
+    public String BloggingApplicationView() {
+        return "BloggingApplication.html";
+    }
+
+    @RequestMapping("/WeatherApplication")
+    public String WeatherApplicationView() {
+        return "WeatherApplication.html";
     }
 
     @RequestMapping("/HealthProjectGitHub")
     public String HealthProjectGitHub() {
         return "redirect:https://github.com/S7M1R/Health-Services-Application";
+    }
+
+    @RequestMapping("/flightProjectGithub")
+    public String flightProjectGithub() {
+        return "redirect:https://github.com/S7M1R/Flight-Reservation";
+    }
+
+    @RequestMapping("/RealestateProjectGithub")
+    public String RealestateProjectGithub() {
+        return "redirect:https://github.com/S7M1R/Realestate-Services-Appliaction";
+    }
+
+    @RequestMapping("/ChatProjectGithub")
+    public String ChatProjectGithub() {
+        return "redirect:https://github.com/S7M1R/chat-application";
+    }
+
+    @RequestMapping("/BlogProjectGithub")
+    public String BlogProjectGithub() {
+        return "redirect:https://github.com/S7M1R/Blog-Application";
+    }
+
+    @RequestMapping("/WeatherProjectGithub")
+    public String WeatherProjectGithub() {
+        return "redirect:https://github.com/S7M1R/Weather-Update-Application";
     }
 
     @GetMapping("/downloadCV")
