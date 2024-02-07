@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
     <!-- --------- CSS ---------- -->
-    <link rel="stylesheet" th:href="@{/Css/index.css}">
+    <link rel="stylesheet" th:href="@{/Css/HealthServices.css}">
 
     <!-- --------- FAVICON ---------- -->
     <link rel="shortcut icon" th:href="@{/Images/pngwing.com.png}" type="image/x-icon">
 
-    <title>Portfolio</title>
+    <title>Real Estate Services Application</title>
 </head>
 <body>
    <div class="container">
@@ -29,11 +29,11 @@
                     <div class="circle"></div>
                 </li>
                 <li class="nav_list">
-                    <a href="#Skills" class="nav-link">Skills</a>
+                    <a href="#Skills" class="nav-link">Technologies Used</a>
                     <div class="circle"></div>
                 </li>
                 <li class="nav_list">
-                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#projects" class="nav-link">Project Description</a>
                     <div class="circle"></div>
                 </li>
                 <li class="nav_list">
@@ -43,7 +43,7 @@
             </ul>
         </div>
         <div class="nav-button">
-            <button class="btn" onclick="downloadCv()">Download CV<i class="uil uil-file-alt"></i></button>
+            <button class="btn" onclick="HalthProjectLink()">Get Code<i class="uil uil-github-alt"></i></button>
         </div>
         <div class="nav-menu-btn">
             <i class="uil uil-bars" onclick="myMenuFunction()"></i>
@@ -57,28 +57,22 @@
        <section class="featured-box" id="home">
           <div class="featured-text">
             <div class="featured-text-card">
-                <span>Sameeroddin Kazi</span>
+                <span>Realestate Domain</span>
             </div>
             <div class="featured-name">
-                <p>I'm <span class="typedText"></span></p>
+                <p><span class="typedText"></span></p>
             </div>
             <div class="featured-text-info">
-                <p>Passionate Java Developer skilled in crafting enterprise applications with expertise in Java, Spring Boot, and microservices. Proven track record in Agile methodologies, adept at RDBMS (MySQL) and NoSQL (MongoDB). Strong problem-solving, collaborative, and committed to high-quality software solutions. Specializes in efficient Spring Boot Microservices and adeptly integrates engaging user interfaces using HTML, CSS, and JavaScript. Dedicated to continuous improvement and staying at the forefront of technology trends.</p>
+                <p>The Real Estate Management Application is meticulously crafted using a robust and scalable RESTful Application, epitomizing the principles of scalability, flexibility, and maintainability. Within this architectural paradigm, each functional module operates seamlessly communicating with others through RESTful APIs. This design choice not only facilitates agile development but also allows for autonomous deployment and scaling of individual modules, ensuring adaptability to the ever-evolving demands of the real estate landscape.</p>
             </div>
             <div class="featured-text-btn">
                 
-                <button class="btn" onclick="downloadCv()">Download CV <i class="uil uil-file-alt"></i></button>
-            </div>
-            <div class="social_icons">
-                <a href="http://www.linkedin.com/in/sameeroddin-kazi"><div class="icon"><i class="uil uil-linkedin-alt" ></i></div></a>
-                <a href="https://github.com/S7M1R"><div class="icon"><i class="uil uil-github-alt"></i></div></a>
-                <a href="https://x.com/SameeroddinKazi?t=01cXHMrwjsR8M9wyQDZbRQ&s=09"><div class="icon"><i class="uil uil-twitter-alt"></i></div></a>
-                <a href="https://wa.me/+91-7620338237"><div class="icon"><i class="uil uil-whatsapp"></i></div></a>
+                <button class="btn" onclick="HalthProjectLink()">Get Code  <i class="uil uil-github-alt"></i></button>
             </div>
           </div>
           <div class="featured-image" id="im">
             <div class="image">
-                <img th:src="@{/Images/sk.jpg}" alt="avatar">
+                <img th:src="@{/Images/realestate.png}" alt="avatar">
             </div>
           </div>
           <div class="scroll-icon-box">
@@ -92,7 +86,7 @@
        <!-- -------------- Skills BOX ---------------- -->
        <section class="section" id="Skills">
           <div class="top-header">
-            <h1>Skills</h1>
+            <h1>Technologies Used</h1>
           </div>
           <div class="row">
             <div class="col">
@@ -104,6 +98,7 @@
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>Jsp - Jstl</span>
+                        <span>PostMan</span>
                     </div>
                 </div>
                 <div class="skills-box">
@@ -111,30 +106,21 @@
                         <h3>Backend</h3>
                     </div>
                     <div class="skills-list">
-                        <span>Java SDK 1.8, SDK 17</span>
+                        <span>Java SDK 17</span>
                         <span>OOPS</span>
-                        <span>J2ee</span>
                         <span>JDBC</span>
                         <span>jsp Servlet</span>
                         <span id="sp">Spring Boot (Embedded-Tomcat)</span>
                         <span>Spring Security</span>
                         <span>Spring MVC Maven</span>
-                        <span>Spring Boot Microservices</span>
                         <span>RESTful Webservices</span>
-                        <span>Spring Websocket</span>
                         <span>Spring Actuator</span>
-                        <span>Apache Kafka</span>
                         <span>Hibernate Jpa</span>
                         <span>REST api</span>
                         <span>Git & Github</span>
-                        <span>Agile (Scrum & Kanban)</span>
-                        <span>JIRA</span>
                         <span>Debugging & TrubleShooting</span>
                         <span>White Box Testing</span>
                         <span>Junit</span>
-                        <span>Begginer AWS</span>
-                        <span>Begginer CI/CD</span>
-                        <span>Grafana</span>
                     </div>
                 </div>
                 <div class="skills-box">
@@ -143,7 +129,6 @@
                     </div>
                     <div class="skills-list">
                         <span>MySQL</span>
-                        <span>MongoDB</span>
                     </div>
                 </div>
             </div>
@@ -154,46 +139,96 @@
 
        <section class="section" id="projects">
           <div class="top-header">
-              <h1>Projects</h1>
+              <h1>Project Description</h1>
           </div>
           <div class="project-container">
-            <div class="project-box">
-                <i class="uil uil-medkit"></i>
-                <h3>Health Services Application</h3>
-                <label>Healthcare & Management Domain Application</label>
-                <button class="btn-project" onclick="HealthServicesView()">View More</button>
+    <div class="project-box">
+        <i class="uil uil-estate"></i>
+        <h3 style="text-align: center;">Realestate Services Application</h3>
+        <p style="text-align: center; font-style: italic;">Based on Spring Monolithic Architecture</p>
+        <br>
+        <div  class="project-align">
+            <h4>Introduction</h4>
+            <div  class="project-text-align">
+                <p>
+                This Real Estate Management Application is designed to streamline and enhance the process of property management, facilitating efficient property listing, user interactions, and administrative tasks. Developed using the Java Spring Boot framework, the application follows a Monolithic architecture for simplicity and ease of maintenance. The comprehensive solution covers modules such as Property Management, User Profiles, Listing Bookings, Transaction Processing, Property Reviews, and Property Ratings.
+            </p>
             </div>
-            <div class="project-box">
-                <i class="uil uil-plane-departure"></i>
-                <h3>Flyo</h3>
-                <label>Flight Reservation Application</label>
-                <button class="btn-project" onclick="FlightReservationApplicationView()">View More</button>
+            
+            <br>
+            <br>
+
+            <h4>Technology Stack</h4>
+            <div class="project-text-align" id="techstack">
+                <p ><strong>Programming Language :</strong> Java </p>
+                <p ><strong>Framework :</strong> Spring Boot</p>
+                <p ><strong>Architecture :</strong> Monolithic</p>
+                <p ><strong>Database :</strong> MySQL & MongoDB</p>
+                <p ><strong>Other Tools :</strong> Lombok,Swagger,Actuator, RestApi</p>
             </div>
-            <div class="project-box">
-                <i class="uil uil-estate"></i>
-                <h3>Real Estate Services Application</h3>
-                <label>Real-Estate & Property solutions</label>
-                <button class="btn-project" onclick="RealestateApplicationView()">View More</button>
+            
+            <br>
+            <br>
+
+            <h4>Modules</h4>
+            <div  class="project-text-align">
+                <p><strong>Property Management:</strong> Manages the list of properties, including details such as location, size, amenities, and pricing.Handles property types, availability, and any associated rules or restrictions.</p>
+                <br>
+                <p><strong>User Profiles:</strong> Manages user information, including profiles, preferences, and historical property data.Provides functionalities for user authentication and authorization.</p>
+                <br>
+                <p><strong>Listing Bookings:</strong> Allows users to search for properties based on criteria such as location, size, and amenities.Facilitates the booking of property listings, including lease duration and optional add-ons.</p>
+                <br>
+                <p><strong>Property Reviews:</strong> Enables users to submit reviews and feedback on their property rental experiences.Manages a repository of user reviews for each property, contributing to the overall property rating.</p>
+                <br>
+                <p><strong>User Subscription Plan:</strong> Manages user subscription details, preferences, and access levels.Offers tiered subscription plans with varying benefits, such as priority access to newly listed properties, exclusive discounts, and personalized recommendations.</p>
+                <br>
+                <p><strong>Owner Subscription Plan:</strong>  Facilitates property owners in subscribing to tailored plans for listing and managing their properties.Provides features like enhanced property visibility, analytics on property performance, and dedicated customer support for subscribed owners.</p>
+                <br>
+                <p><strong>Transaction Processing:</strong> Integrates a payment gateway for secure and seamless transaction processing.Supports various payment methods and ensures the confidentiality of user financial information.</p>
             </div>
-            <div class="project-box">
-                <i class="uil uil-comments"></i>
-                <h3>Chat Application</h3>
-                <label>Real-Time Chatting Application</label>
-                <button class="btn-project" onclick="chatApplicationView()">View More</button>
+            <br>
+            <br>
+
+            <h4>Application Health Check Mechanism</h4>
+            <p  class="project-text-align">
+                The application has a health check mechanism implemented using Spring Boot Actuator. The Actuator module provides useful insights into the Spring environment for a running application with functions for health checking and metrics gathering. The health check endpoint is exposed over HTTP and JMX.
+            </p>
+            <br>
+            <br>
+
+            <h4>Monitoring and Observability</h4>
+            <p  class="project-text-align">
+                The monitoring and observability of the application are achieved using health check functions in Spring Boot applications and making them observable by capturing useful health metrics. The application integrates with popular monitoring tools for predicting system health in the future by observing any anomalies in a series of metrics like memory utilization, errors, and disk space.
+            </p>
+            <br>
+            <br>
+            <h4>Payment Processing</h4>
+            <p  class="project-text-align">Integrates a payment gateway for secure and seamless transaction processing.
+Supports various payment methods and ensures the confidentiality of user financial information.</p>
+            <br>
+            <br>
+
+            <h4>Future Modules</h4>
+            <div class="project-text-align" id="furturemodule">
+                <p><strong>Front-End: </strong> intigrate and optimize current forntend with the proper frontend framework like Angular</p>
+                
             </div>
-            <div class="project-box">
-                <i class="uil uil-blogger-alt"></i>
-                <h3>Blogging Application</h3>
-                <label>Blogging Services Application</label>
-                <button class="btn-project" onclick="BlogApplicationView()">View More</button>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-clouds"></i>
-                <h3>Weather Update Application</h3>
-                <label>Realtime Weather Update Application</label>
-                <button class="btn-project" onclick="WeatherApplicationView()">View More</button>
-            </div>
-          </div>
+            <br>
+            <br>
+
+            <h4>Conclusion</h4>
+            <p class="project-text-align">
+                In summation, the Real Estate Management Application not only caters to the diverse needs of property seekers, landlords, and real estate professionals but also embodies a forward-looking technological foundation. The application's RESTful microservices architecture underlines its commitment to scalability, flexibility, and maintainability, ensuring a cutting-edge and future-proof real estate management solution.
+            </p>
+            <br>
+            <br>
+            <button class="btn-project" onclick="HalthProjectLink()">Get Code <i class="uil uil-github-alt"></i></button>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+
           
        </section>
 
@@ -266,7 +301,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- ----- MAIN JS ----- -->
-   <script th:src="@{/Javascript/main.js}"></script>
+   <script th:src="@{/Javascript/Real.js}"></script>
 </body>
 </html>
 
