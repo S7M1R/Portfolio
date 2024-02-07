@@ -54,19 +54,20 @@ html{
 .btn{
     font-weight: 500;
     padding: 12px 20px;
-    background: #efefef;
-    border: 1px solid black;
+    background: #000000;
+    border: 2px solid black;
     border-radius: 10px;
     cursor: pointer;
     transition: .4s;
-    width: 100%;
+    width: 50%;
+    color: white;
 }
 .btn>i{
     margin-left: 10px;
 }
 .btn:hover{
-    background: var(--second-color);
-    color: var(--color-white);
+    background: white;
+    color: black;
 }
 
 /* ----- GLOBAL ICONS DESIGN ----- */
@@ -99,10 +100,14 @@ nav{
 .nav-logo{
    position: relative;
 }
+.nav-logo a{
+   text-decoration: none;
+}
 .nav-name{
     font-size: 30px;
     font-weight: 600;
     color: var(--text-color-third);
+    cursor:pointer;
 }
 .nav-menu, .nav_menu_list{
     display: flex;
@@ -176,6 +181,7 @@ nav{
     padding: 2px 25px;
     font-size: 15px;
     border-radius: 5px;
+    font-weight: 700;
 }
 .featured-name{
     font-size: 50px;
@@ -191,6 +197,7 @@ nav{
     font-size: 15px;
     margin-bottom: 30px;
     color: var(--text-color-second);
+    text-align: justify;
 }
 .featured-text-btn{
     display: flex;
@@ -216,6 +223,7 @@ nav{
     align-items: center;
     width: 60px;
     height: 60px;
+    color: black;
     border-bottom: 1px solid black;
     border-radius: 50%;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
@@ -282,6 +290,20 @@ nav{
 /* ----- MAIN BOX ----- */
 .section{
     padding-block: 5em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0;
+
+}
+
+.contact_section{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 .row{
     display: flex;
@@ -373,112 +395,102 @@ h3{
     border-radius: 5px;
 }
 
+/* ----- PROJECTS BOX ----- */
 
-/* ----- project BOX ----- */
 
-
-.project-container {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  box-sizing: border-box;
-  width: 90vw;
-  height: fit-content;
-  margin: 0 auto;
-}
-
-.project-box {
-  position: relative;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: fit-content;
-  background: var(--color-white);
-  border-radius: 20px;
-  box-shadow: 1px 8px 10px 2px rgba(43, 43, 43, 0.404);
-  overflow: hidden;
-  padding: 20px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-}
-
-.project-box > h3{
-    width: 100%;
-    height: 100%;
-     display: grid;
-  justify-content: center;
-  align-items: center;
-}
-.project-box > i {
-     display: grid;
-  justify-content: center;
-  align-items: center;
-  font-size: 50px;
-  color: #00B5E7;
-  margin-bottom: 25px;
-}
-
-.project-box label {
-     display: grid;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
-  color: #777;
-  text-align: center;
-}
-#project_btn{
-    height: 100%;
-    width: 100%;
+.project-container{
+    width: 110%;
+    height: fit-content;
     display: grid;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 7px;
+}
+
+.project-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    background: var(--color-white);
+    border-radius: 20px;
+    box-shadow: 1px 8px 10px 2px rgba(43, 43, 43, 0.404);
+    margin: 18px ;
+    overflow: hidden;
+}
+.project-box>i{
+    font-size: 50px;
+    color: #00B5E7;
+    margin-bottom: 25px;
+}
+.project-box label{
+    font-size: 15px;
+    color: #777;
+}
+.project-box::after, .contact-info::after{
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    background: var(--second-color);
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    z-index: 1;
+}
+
+.btn-project{
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #000000;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+    width: 30vh;
+    position: relative;
+    z-index: 10;
+    margin-top: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    transition: .3s;
+}
+.btn-project:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    z-index: 10;
+}
+.project-align{
+    text-align: center; 
+    margin-top: 20px; 
+    padding: 0 20px;
+    font-size: 15px;
+    color: var(--text-color-second);
+    text-align: center;
+}
+.project-text-align{
+    text-align: justify; 
+    margin-top: 20px; padding: 0 5vw; 
+    width: 100%; 
+    display: grid; 
+    align-items: center; 
     justify-content: center;
 }
+#techstack{
+    text-align: left;
+    width: 100%; 
+    display: grid; 
+    justify-content:start;
 
-.project-box::after,
-.contact-info::after {
-  content: "";
-  position: absolute;
-  bottom: -100%;
-  background: var(--second-color);
-  width: 100%;
-  height: 100%;
-  transition: .4s;
-  z-index: 1;
 }
+#furturemodule{
+    text-align: left;
+    width: 100%; 
+    display: grid; 
+    justify-content:start;
 
-.project-box:hover .project-box::after,
-.contact-info:hover .contact-info::after {
-  bottom: 0;
-}
-
-.project-box:hover .project-box i,
-.project-box:hover .project-box > h3,
-.project-box:hover .project-box > label {
-  color: var(--color-white);
-  z-index: 2;
-}
-
-.btn-project {
-  font-weight: 500;
-  padding: 12px 20px;
-  background: #efefef;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: .4s;
-  width: 100%;
-  max-width: 200px;
-  position: relative;
-  z-index: 10;
-  margin-top: 5px;
-  border: 1px solid rgb(0, 0, 0);
-}
-
-.btn-project:hover {
-  z-index: 10;
 }
 /* ----- CONTACT BOX ----- */
 .contact-info{
@@ -623,10 +635,8 @@ footer{
         height: 60px;
         padding-inline: 2vw ;
     }
-
-     #im{
-
-        width: 90%;
+    .btn{
+        width: 100%;
     }
     .nav-button{
         display: none;
@@ -660,20 +670,25 @@ footer{
         padding-inline: 2.5vw;
     }
     .featured-box{
+
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 100vh;
+        height: fit-content;
         width: 95vw;
        
     }
     .featured-text{
-        width: 90vw;
+
+        width: 95vw;
         order: 2;
         justify-content: center;
         align-content: flex-start;
-        min-height: 60vh;
+        height: inherit;
         
+    }
+    .featured-name{
+        height: 37vh;
     }
     .featured-text-btn{
         width: 90vw;
@@ -697,23 +712,27 @@ footer{
         display: none;
     }
     .featured-image{
+        
         order: 1;
         min-height: 150px;
         width: 100%;
         margin-top: 65px;
         justify-content: center;
         align-items: center;
-        margin-top: 90px;
-        margin-bottom: 20px;
+        padding-top: 5vh;
+        padding-bottom: 2vh;
+        
     }
    
     .image, .image img{
-        width: 150px;
-        height: 150px;
+        width: 250px;
+        height: 250px;
+        border: 1px solid gray;
     }
     .wrapper{
         width: 95vw;
     }
+
 
     .section{
         width: 95vw;
@@ -731,28 +750,44 @@ footer{
         justify-content: center;
         
     }
+    .contact_section{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        contain: content;
+
+    }
     .row{
-        
+        width: 95vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 50px;
     }
     .col{
+        width: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
     }
     .about-info, .contact-info{
         width: 100%;
     }
     .project-container{
+        width: 100%;
         justify-content: center;
+        align-items: center;
     }
     .project-box{
-
-        width: 90vw;
+        border: 1px solid grey;
+        width: 98vw;
+    }
+    .project-text-align{
+        text-align: center;
+        text-wrap:wrap;
+        text-align: justify;
+    margin-top: 0px; padding: 0 0vw; 
     }
     .contact-info p{
         display: flex;

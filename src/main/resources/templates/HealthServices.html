@@ -13,14 +13,14 @@
     <!-- --------- FAVICON ---------- -->
     <link rel="shortcut icon" th:href="@{/Images/pngwing.com.png}" type="image/x-icon">
 
-    <title>Portfolio</title>
+    <title>Health Services Application</title>
 </head>
 <body>
    <div class="container">
     <!-- --------------- HEADER --------------- -->
       <nav id="header">
         <div class="nav-logo">
-            <p class="nav-name">Sameeroddin</p>
+            <a href="/"><p class="nav-name" >SAMEERODDIN</p></a>
         </div>
         <div class="nav-menu" id="myNavMenu">
             <ul class="nav_menu_list">
@@ -29,7 +29,11 @@
                     <div class="circle"></div>
                 </li>
                 <li class="nav_list">
-                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#Skills" class="nav-link">Technologies Used</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Project Description</a>
                     <div class="circle"></div>
                 </li>
                 <li class="nav_list">
@@ -39,7 +43,7 @@
             </ul>
         </div>
         <div class="nav-button">
-            <button class="btn" onclick="downloadCv()">Git Repository</button>
+            <button class="btn" onclick="HalthProjectLink()">Get Code<i class="uil uil-github-alt"></i></button>
         </div>
         <div class="nav-menu-btn">
             <i class="uil uil-bars" onclick="myMenuFunction()"></i>
@@ -52,23 +56,20 @@
        <!-- -------------- FEATURED BOX ---------------- -->
        <section class="featured-box" id="home">
           <div class="featured-text">
+            <div class="featured-text-card">
+                <span>HealthCare Domain</span>
+            </div>
+            <div class="featured-name">
+                <p><span class="typedText"></span></p>
+            </div>
             <div class="featured-text-info">
-                <p>The Health Services Application is designed to provide a seamless and secure experience for users in managing their healthcare needs. With a Microservices Architecture, the project ensures modularity, scalability, and robustness. Users can access features like appointment booking, medicine ordering, and insurance policies through a user-friendly interface. Doctors, on the other hand, can manage appointments, write and read blogs, and monitor their availability slots.
-
-Key features include secure authentication using Spring Security and JWT, circuit breakers for preventing failures, and monitoring performance using Spring Actuator. Data is stored efficiently using MongoDB and MySQL for different services.
-
-The project comprises Microservices such as User Service, Doctor Service, BlogPost Service, Medicine Service, and an API Gateway for centralized access.
-                </p>
+                <p>The application is built using a RESTful microservices architecture, which ensures scalability, flexibility, and maintainability. Each module is a separate microservice that communicates with other microservices using RESTful APIs. This architecture allows for independent development, deployment, and scaling of each module.
+                    <br>
+Overall, this project provides a comprehensive health services application that caters to the needs of users, doctors, and insurance providers. It offers a user-friendly interface for booking appointments and accessing health-related information. The application is built using a RESTful microservices architecture, ensuring scalability, flexibility, and maintainability.</p>
             </div>
             <div class="featured-text-btn">
-                <button class="btn" onclick="downloadCv()">Git Repository</button>
-            </div>
-            
-            <div class="social_icons">
-                <a href="http://www.linkedin.com/in/sameeroddin-kazi"><div class="icon"><i class="uil uil-linkedin-alt" ></i></div></a>
-                <a href="http://https://github.com/S7M1R"><div class="icon"><i class="uil uil-github-alt"></i></div></a>
-                <a href="#"><div class="icon"><i class="uil uil-twitter-alt"></i></div></a>
-                <a href="#"><div class="icon"><i class="uil uil-whatsapp"></i></div></a>
+                
+                <button class="btn" onclick="HalthProjectLink()">Get Code  <i class="uil uil-github-alt"></i></button>
             </div>
           </div>
           <div class="featured-image" id="im">
@@ -84,38 +85,174 @@ The project comprises Microservices such as User Service, Doctor Service, BlogPo
           </div>
 
        </section>
+       <!-- -------------- Skills BOX ---------------- -->
+       <section class="section" id="Skills">
+          <div class="top-header">
+            <h1>Technologies Used</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Jsp - Jstl</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>Java SDK 1.8, SDK 17</span>
+                        <span>OOPS</span>
+                        <span>J2ee</span>
+                        <span>JDBC</span>
+                        <span>jsp Servlet</span>
+                        <span id="sp">Spring Boot (Embedded-Tomcat)</span>
+                        <span>Spring Security</span>
+                        <span>Spring MVC Maven</span>
+                        <span>Spring Boot Microservices</span>
+                        <span>RESTful Webservices</span>
+                        <span>Spring Websocket</span>
+                        <span>Spring Actuator</span>
+                        <span>Apache Kafka</span>
+                        <span>Hibernate Jpa</span>
+                        <span>REST api</span>
+                        <span>Git & Github</span>
+                        <span>Agile (Scrum & Kanban)</span>
+                        <span>JIRA</span>
+                        <span>Debugging & TrubleShooting</span>
+                        <span>White Box Testing</span>
+                        <span>Junit</span>
+                        <span>Begginer AWS</span>
+                        <span>Begginer CI/CD</span>
+                        <span>Grafana</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+          </div>
+       </section>
 
        <!-- -------------- PROJECT BOX ---------------- -->
 
        <section class="section" id="projects">
-          <div class="top-header" >
+          <div class="top-header">
               <h1>Project Description</h1>
           </div>
           <div class="project-container">
     <div class="project-box">
         <i class="uil uil-medkit"></i>
-        <h3>Health Services Application</h3>
-        <label>Microservices Architecture Portfolio Project</label>
-        <p>The Health Services Application is designed to provide a seamless and secure experience for users in managing their healthcare needs. With a Microservices Architecture, the project ensures modularity, scalability, and robustness. Users can access features like appointment booking, medicine ordering, and insurance policies through a user-friendly interface. Doctors, on the other hand, can manage appointments, write and read blogs, and monitor their availability slots.</p>
-        <p>Key features include secure authentication using Spring Security and JWT, circuit breakers for preventing failures, and monitoring performance using Spring Actuator. Data is stored efficiently using MongoDB and MySQL for different services.</p>
-        <p>The project comprises Microservices such as User Service, Doctor Service, BlogPost Service, Medicine Service, and an API Gateway for centralized access.</p>
-        <p>Overview:</p>
-        <ul>
-            <li>This project showcases the development of a comprehensive Health Services Application built on a robust Microservices Architecture with synchronous communication using REST API. The technology stack includes Java, Spring Boot, Hibernate, MySQL, MongoDB, and employs a total of 7 Microservices to ensure scalability, modularity, and efficiency.</li>
-            <li>User Service:</li>
-            <li>Doctor Service:</li>
-            <li>BlogPost Service:</li>
-            <li>Medicine Service:</li>
-            <li>API Gateway:</li>
-        </ul>
-        <p>Conclusion:</p>
-        <p>This project demonstrates the implementation of a highly scalable and secure Health Services Application using Microservices Architecture. The use of industry-standard technologies, robust authentication mechanisms, and integrated payment gateways enhance the overall functionality and user experience. The inclusion of resilience measures and monitoring tools ensures the reliability and performance of the application.</p>
-        <div class="nav-button" id="project_btn">
-        <button class="btn" onclick="HalthProjectLink()">Git Repository</button>
+        <h3 style="text-align: center;">Healthcare Services Application</h3>
+        <p style="text-align: center; font-style: italic;">Based on Restful Microservices Architecture</p>
+        <br>
+        <div  class="project-align">
+            <h4>Introduction</h4>
+            <div  class="project-text-align">
+                <p>
+                This project is a health services application built using Restful Microservices Architecture with Spring Boot and Java. The application has modules like Doctor, User, Insurance, Appointment Booking, Health Blog, Review Doctor, and Rate Doctor. The application provides functionalities for managing doctors, users, insurance, appointment booking, health blogs, doctor reviews, and doctor rating.
+            </p>
+            </div>
+            
+            <br>
+            <br>
+
+            <h4>Technology Stack</h4>
+            <div class="project-text-align" id="techstack">
+                <p ><strong>Programming Language :</strong> Java </p>
+                <p ><strong>Framework :</strong> Spring Boot</p>
+                <p ><strong>Architecture :</strong> Microservices</p>
+                <p ><strong>Database :</strong> MySQL & MongoDB</p>
+                <p ><strong>Other Tools :</strong> Lombok, Eureka Server, Hystrix Circuit Breaker, Swagger, Webflux, Actuator, RestApi</p>
+            </div>
+            
+            <br>
+            <br>
+
+            <h4>Modules</h4>
+            <div  class="project-text-align">
+                <p><strong>Doctor:</strong> This module manages the list of doctors, their availability, and specializations. It allows users to search for doctors based on their specialization and availability.</p>
+                <br>
+                <p><strong>User:</strong> This module manages the list of users and their details. It allows users to register, login, and update their personal information.</p>
+                <br>
+                <p><strong>Insurance:</strong> This module manages the list of insurances and their details. It allows users to search for insurance providers based on their location and services.</p>
+                <br>
+                <p><strong>Appointment Booking:</strong> This module allows users to book appointments with doctors. It provides a user-friendly interface for users to select a doctor, date, and time for their appointment.</p>
+                <br>
+                <p><strong>Health Blog:</strong> This module contains health-related articles and blogs. It allows users to read articles and blogs related to health and well-being.</p>
+                <br>
+                <p><strong>Review Doctor:</strong>  This module allows users to review doctors based on their experience. It provides a platform for users to share their reviews and feedback about doctors.</p>
+                <br>
+                <p><strong>Rate Doctor:</strong> This module allows users to rate doctors based on their experience. It provides a user-friendly interface for users to rate doctors on various factors such as professionalism, communication, and punctuality.</p>
+            </div>
+            <br>
+            <br>
+
+            <h4>Health Check Mechanism</h4>
+            <p  class="project-text-align">
+                The application has a health check mechanism implemented using Spring Boot Actuator. The Actuator module provides useful insights into the Spring environment for a running application with functions for health checking and metrics gathering. The health check endpoint is exposed over HTTP and JMX.
+            </p>
+            <br>
+            <br>
+
+            <h4>Monitoring and Observability</h4>
+            <p  class="project-text-align">
+                The monitoring and observability of the application are achieved using health check functions in Spring Boot applications and making them observable by capturing useful health metrics. The application integrates with popular monitoring tools for predicting system health in the future by observing any anomalies in a series of metrics like memory utilization, errors, and disk space.
+            </p>
+            <br>
+            <br>
+            <h4>API Gateway</h4>
+            <p  class="project-text-align">
+                 is a server that acts as an entry point into a system, handling all external API requests and routing them to the appropriate microservices. It can also perform tasks such as authentication, rate limiting, and caching.
+            </p>
+            <br>
+            <br>
+            <h4>Eureka Server</h4>
+            <p  class="project-text-align">
+                 is a service registry that enables microservices to discover and communicate with each other. It provides a centralized location for microservices to register themselves, allowing them to be discovered by other microservices and the API Gateway.
+            </p>
+            <br>
+            <br>
+
+            <h4>Future Modules</h4>
+            <div class="project-text-align" id="furturemodule">
+                <p><strong>Prescription Management:</strong> This module can manage the prescriptions given by doctors to patients.</p>
+                <br>
+                <p><strong>Payment Gateway Integration:</strong> This module can manage the payment gateway integration for appointments booking.</p>
+                <br>
+                <p><strong>Chatbot Integration:</strong> This module can manage the chatbot integration for answering health-related queries.</p>
+                <br>
+                <p><strong>Analytics Dashboard:</strong> This module can provide an analytics dashboard for monitoring the application's performance and usage.</p>
+                <br>
+            </div>
+            <br>
+            <br>
+
+            <h4>Conclusion</h4>
+            <p class="project-text-align">
+                This project is a comprehensive health services application with modules like Doctor, User, Insurance, Appointment Booking, Health Blog, Review Doctor, and Rate Doctor. The application has a health check mechanism implemented using Spring Boot Actuator, making it observable and monitorable. The future modules can enhance the application's functionality and user experience.
+            </p>
+            <br>
+            <br>
+            <button class="btn-project" onclick="HalthProjectLink()">Get Code <i class="uil uil-github-alt"></i></button>
+            <br>
+            <br>
+        </div>
     </div>
-    </div>
-    
 </div>
+
           
        </section>
 
@@ -124,9 +261,10 @@ The project comprises Microservices such as User Service, Doctor Service, BlogPo
        <section class="section" id="contact">
           <div class="top-header">
             <h1>Get in touch</h1>
-            <span>Do you have a project in your mind, contact me here</span>
+            <span>Ready to turn your vision into reality? Let's get started on your next big idea.</span>
           </div>
-          <div class="row">
+          <div class="contact_section">
+            <div class="row">
              <div class="col">
                 <div class="contact-info">
                     <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
@@ -138,8 +276,8 @@ The project comprises Microservices such as User Service, Doctor Service, BlogPo
                 <form action="sendEmail" method="post">
                     <div class="form-control">
                         <div class="form-inputs">
-                            <input type="text" class="input-field" placeholder="Name" name="Name">
-                            <input type="email" class="input-field" placeholder="Email" name="Email">
+                            <input type="text" class="input-field" placeholder="Your Name" name="Name">
+                            <input type="email" class="input-field" placeholder="Your Email" name="Email">
                         </div>
                         <div class="text-area">
                             <textarea placeholder="Message" name="Message"></textarea>
@@ -150,6 +288,7 @@ The project comprises Microservices such as User Service, Doctor Service, BlogPo
                     </div>
                 </form>
              </div>
+          </div>
           </div>
        </section>
 
@@ -163,11 +302,12 @@ The project comprises Microservices such as User Service, Doctor Service, BlogPo
         </div>
        
         <div class="footer-social-icons">
-            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-                <div class="icon"><i class="uil uil-github-alt"></i></div>
-                <div class="icon"><i class="uil uil-twitter-alt"></i></div>
-                <div class="icon"><i class="uil uil-whatsapp"></i></div>
+                <a href="http://www.linkedin.com/in/sameeroddin-kazi"><div class="icon"><i class="uil uil-linkedin-alt" ></i></div></a>
+                <a href="https://github.com/S7M1R"><div class="icon"><i class="uil uil-github-alt"></i></div></a>
+                <a href="https://x.com/SameeroddinKazi?t=01cXHMrwjsR8M9wyQDZbRQ&s=09"><div class="icon"><i class="uil uil-twitter-alt"></i></div></a>
+                <a href="https://wa.me/+91-7620338237"><div class="icon"><i class="uil uil-whatsapp"></i></div></a>
         </div>
+            
         <div class="bottom-footer">
             <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Sameeroddin Kazi</a> - All rights reserved</p>
         </div>
@@ -185,7 +325,7 @@ The project comprises Microservices such as User Service, Doctor Service, BlogPo
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- ----- MAIN JS ----- -->
-   <script th:src="@{/Javascript/main.js}"></script>
+   <script th:src="@{/Javascript/Health.js}"></script>
 </body>
 </html>
 

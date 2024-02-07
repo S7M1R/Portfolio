@@ -126,11 +126,11 @@
   }
 
   function HealthServicesView(){
-    window.location.href = '/viewHealthProject';
+    window.location.href = '/healthServicesApplication';
   }
   function HalthProjectLink(){
     window.location.href = '/HealthProjectGitHub';
   }
-  
+
   
   

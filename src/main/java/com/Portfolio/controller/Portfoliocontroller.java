@@ -29,8 +29,8 @@ public class Portfoliocontroller {
         return "http://www.linkedin.com/in/sameeroddin-kazi";
     }
 
-    @RequestMapping("/viewHealthProject")
-    public String viewHealthProject() {
+    @RequestMapping("/healthServicesApplication")
+    public String HealthServicesApplication() {
         return "HealthServices.html";
     }
 

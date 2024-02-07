@@ -18,24 +18,21 @@ public class PortfolioServices {
     @Autowired
     private EmailServices emailServices;
 
-
     public void sendEmailToS7M1R(EmailBody emailbody) {
         EmailBody emailbody1 = new EmailBody();
         emailbody1.setSenderEmail(emailbody.getSenderEmail());
         emailbody1.setMessage(emailbody.getMessage());
         emailbody1.setSenderName(emailbody.getSenderName());
 
-
         emailServices.sendMailServices(emailbody1);
     }
 
-
-    public ResponseEntity<byte[]> DownloadCVRequest() throws Exception{
-        ClassPathResource pdfFile = new ClassPathResource("static/files/Resume.pdf");
+    public ResponseEntity<byte[]> DownloadCVRequest() throws Exception {
+        ClassPathResource pdfFile = new ClassPathResource("static/files/SAMEERODDIN KAZI RESUME.pdf");
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_PDF);
-        headers.setContentDispositionFormData("attachment", "Resume.pdf");
+        headers.setContentDispositionFormData("attachment", "SAMEERODDIN KAZI RESUME.pdf");
 
         Path path = Paths.get(pdfFile.getURI());
         byte[] pdfBytes = Files.readAllBytes(path);
