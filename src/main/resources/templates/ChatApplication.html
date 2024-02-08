@@ -11,7 +11,7 @@
     <link rel="stylesheet" th:href="@{/Css/HealthServices.css}">
 
     <!-- --------- FAVICON ---------- -->
-    <link rel="shortcut icon" th:href="@{/Images/pngwing.com.png}" type="image/x-icon">
+    <l<link rel="shortcut icon" th:href="@{/Images/sk.png}" type="image/x-icon">
 
     <title>Chat Application</title>
 </head>
@@ -52,7 +52,8 @@
 
 
     <!-- -------------- MAIN ---------------- -->
-    <main class="wrapper">
+    <div class="main-wrapper">
+        <main class="wrapper">
        <!-- -------------- FEATURED BOX ---------------- -->
        <section class="featured-box" id="home">
           <div class="featured-text">
@@ -180,6 +181,8 @@
                 <br>
                 <p><strong>User Feedback:</strong> Enables users to submit feedback on the application's usability and performance.Manages a repository of user feedback, contributing to continuous improvement.</p>
             </div>
+            <br>
+            <br>
             <h4>Application Health Check Mechanism</h4>
             <p  class="project-text-align">
                 The application has a health check mechanism implemented using Spring Boot Actuator. The Actuator module provides useful insights into the Spring environment for a running application with functions for health checking and metrics gathering. The health check endpoint is exposed over HTTP and JMX.

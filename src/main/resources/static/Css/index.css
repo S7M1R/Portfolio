@@ -151,6 +151,13 @@ nav{
 
 
 /* ----- WRAPPER DESIGN ----- */
+.main-wrapper{
+    width: 99vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center ;
+
+}
 .wrapper{
     padding-inline: 8vw;
 }
@@ -184,6 +191,7 @@ nav{
     text-align: justify;
 }
 .featured-name{
+    width: 110%;
     font-size: 50px;
     font-weight: 600;
     color: var(--text-color-second);
@@ -394,7 +402,8 @@ h3{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+
     flex-wrap: wrap;
     margin-bottom: 7px;
 }
@@ -442,7 +451,7 @@ h3{
     z-index: 2;
 }
 .btn-project{
-    font-weight: 500;
+    font-weight: 600;
     padding: 12px 20px;
     background: #efefef;
     border: none;
@@ -453,9 +462,12 @@ h3{
     position: relative;
     z-index: 10;
     margin-top: 5px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1.5px solid rgb(0, 0, 0);
+
 }
 .btn-project:hover {
+    background-color: rgb(61, 61, 61);
+    color: white;
     z-index: 10;
 }
 
@@ -592,15 +604,16 @@ footer{
 }
 
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1250px) {
     body{
         contain:layout;
         display: grid;
         align-items: center;
     }
     nav{
-        height: 60px;
+        max-height: 60px;
         padding-inline: 2vw ;
+        align-items: center;
     }
     .btn{
         width: 100%;
@@ -633,6 +646,9 @@ footer{
         align-items: center;
         justify-content: center;
     }
+    .nav-name{
+        font-weight: 700;
+    }
     .wrapper{
         padding-inline: 2.5vw;
     }
@@ -655,10 +671,12 @@ footer{
         
     }
     .featured-name{
-        height: 31vh;
-        text-align:start;
-        word-spacing: normal;
+
+        width: 100%;
+        height: 25vh;
         line-height: 62px;
+        font-size: 42px;
+
     }
     .featured-text-btn{
         width: 90vw;
@@ -686,7 +704,7 @@ footer{
         order: 1;
         min-height: 150px;
         width: 100%;
-        margin-top: 65px;
+        margin-top: 35px;
         justify-content: center;
         align-items: center;
         padding-top: 5vh;
@@ -754,5 +772,11 @@ footer{
         justify-content: center;
         align-items: center;
     }
+    .main-wrapper{
+        width: unset;
+        height: unset;
+        display: unset;
+        justify-content: unset ;
+        }
 
 }

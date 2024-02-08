@@ -11,7 +11,7 @@
     <link rel="stylesheet" th:href="@{/Css/index.css}">
 
     <!-- --------- FAVICON ---------- -->
-    <link rel="shortcut icon" th:href="@{/Images/image (13).png}" type="image/x-icon">
+    <link rel="shortcut icon" th:href="@{/Images/sk.png}" type="image/x-icon">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-301843263-1"></script>
@@ -63,210 +63,212 @@
 
 
     <!-- -------------- MAIN ---------------- -->
-    <main class="wrapper">
-       <!-- -------------- FEATURED BOX ---------------- -->
-       <section class="featured-box" id="home">
-          <div class="featured-text">
-            <div class="featured-text-card">
-                <span>Sameeroddin Kazi</span>
+    <div class="main-wrapper">
+        <main class="wrapper">
+            <!-- -------------- FEATURED BOX ---------------- -->
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                        <span>Sameeroddin Kazi</span>
+                    </div>
+                    <div class="featured-name">
+                        <p>I'm <span class="typedText"></span></p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>Passionate Java Developer skilled in crafting enterprise applications with expertise in Java, Spring Boot, and microservices. Proven track record in Agile methodologies, adept at RDBMS (MySQL) and NoSQL (MongoDB). Strong problem-solving, collaborative, and committed to high-quality software solutions. Specializes in efficient Spring Boot Microservices and adeptly integrates engaging user interfaces using HTML, CSS, and JavaScript. Dedicated to continuous improvement and staying at the forefront of technology trends.</p>
+                    </div>
+                    <div class="featured-text-btn">
+
+                        <button class="btn" onclick="downloadCv()">Download CV <i class="uil uil-file-alt"></i></button>
+                    </div>
+                    <div class="social_icons">
+                        <a href="http://www.linkedin.com/in/sameeroddin-kazi"><div class="icon"><i class="uil uil-linkedin-alt" ></i></div></a>
+                        <a href="https://github.com/S7M1R"><div class="icon"><i class="uil uil-github-alt"></i></div></a>
+                        <a href="https://x.com/SameeroddinKazi?t=01cXHMrwjsR8M9wyQDZbRQ&s=09"><div class="icon"><i class="uil uil-twitter-alt"></i></div></a>
+                        <a href="https://wa.me/+91-7620338237"><div class="icon"><i class="uil uil-whatsapp"></i></div></a>
+                    </div>
+                </div>
+                <div class="featured-image" id="im">
+                    <div class="image">
+                        <img th:src="@{/Images/image.jpg}" alt="avatar">
+                    </div>
+                </div>
+                <div class="scroll-icon-box">
+                    <a href="#Skills" class="scroll-btn">
+                        <i class="uil uil-mouse-alt"></i>
+                        <p>Scroll Down</p>
+                    </a>
+                </div>
+
+            </section>
+            <!-- -------------- Skills BOX ---------------- -->
+            <section class="section" id="Skills">
+                <div class="top-header">
+                    <h1>Skills</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Frontend</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Jsp - Jstl</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Backend</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>Java SDK 1.8, SDK 17</span>
+                                <span>OOPS</span>
+                                <span>J2ee</span>
+                                <span>JDBC</span>
+                                <span>jsp Servlet</span>
+                                <span id="sp">Spring Boot (Embedded-Tomcat)</span>
+                                <span>Spring Security</span>
+                                <span>Spring MVC Maven</span>
+                                <span>Spring Boot Microservices</span>
+                                <span>RESTful Webservices</span>
+                                <span>Spring Websocket</span>
+                                <span>Spring Actuator</span>
+                                <span>Apache Kafka</span>
+                                <span>Hibernate Jpa</span>
+                                <span>REST api</span>
+                                <span>Git & Github</span>
+                                <span>Agile (Scrum & Kanban)</span>
+                                <span>JIRA</span>
+                                <span>Debugging & TrubleShooting</span>
+                                <span>White Box Testing</span>
+                                <span>Junit</span>
+                                <span>Begginer AWS</span>
+                                <span>Begginer CI/CD</span>
+                                <span>Grafana</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Database</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>MySQL</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -------------- PROJECT BOX ---------------- -->
+
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Projects</h1>
+                </div>
+                <div class="project-container">
+                    <div class="project-box">
+                        <i class="uil uil-medkit"></i>
+                        <h3>Health Services Application</h3>
+                        <label>Healthcare & Management Application</label>
+                        <button class="btn-project" onclick="HealthServicesView()">View More</button>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-plane-departure"></i>
+                        <h3>Flyo</h3>
+                        <label>Flight Reservation Application</label>
+                        <button class="btn-project" onclick="FlightReservationApplicationView()">View More</button>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-estate"></i>
+                        <h3>Real Estate Application</h3>
+                        <label>Real-Estate & Property solutions</label>
+                        <button class="btn-project" onclick="RealestateApplicationView()">View More</button>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-comments"></i>
+                        <h3>Chat Application</h3>
+                        <label>Real-Time Chatting Application</label>
+                        <button class="btn-project" onclick="chatApplicationView()">View More</button>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-blogger-alt"></i>
+                        <h3>Blogging Application</h3>
+                        <label>Blogging Services Application</label>
+                        <button class="btn-project" onclick="BlogApplicationView()">View More</button>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-clouds"></i>
+                        <h3>Weather Update Application</h3>
+                        <label>Realtime Weather Update Application</label>
+                        <button class="btn-project" onclick="WeatherApplicationView()">View More</button>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- -------------- CONTACT BOX ---------------- -->
+
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Get in touch</h1>
+                    <span>Ready to turn your vision into reality? Let's get started on your next big idea.</span>
+                </div>
+                <div class="contact_section">
+                    <div class="row">
+                        <div class="col">
+                            <div class="contact-info">
+                                <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                                <p><i class="uil uil-envelope"></i>Email: contact.sameeroddinkazi@gamil.com</p>
+                                <p><i class="uil uil-phone"></i>Cantact No: +91 7620338237</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <form action="sendEmail" method="post">
+                                <div class="form-control">
+                                    <div class="form-inputs">
+                                        <input type="text" class="input-field" placeholder="Your Name" name="Name">
+                                        <input type="email" class="input-field" placeholder="Your Email" name="Email">
+                                    </div>
+                                    <div class="text-area">
+                                        <textarea placeholder="Message" name="Message"></textarea>
+                                    </div>
+                                    <div class="form-button">
+                                        <button class="btn" type="submit">Send <i class="uil uil-message"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+
+        <!-- --------------- FOOTER --------------- -->
+        <footer>
+            <div class="top-footer">
+                <p>Sameeroddin Kazi</p>
             </div>
-            <div class="featured-name">
-                <p>I'm <span class="typedText"></span></p>
-            </div>
-            <div class="featured-text-info">
-                <p>Passionate Java Developer skilled in crafting enterprise applications with expertise in Java, Spring Boot, and microservices. Proven track record in Agile methodologies, adept at RDBMS (MySQL) and NoSQL (MongoDB). Strong problem-solving, collaborative, and committed to high-quality software solutions. Specializes in efficient Spring Boot Microservices and adeptly integrates engaging user interfaces using HTML, CSS, and JavaScript. Dedicated to continuous improvement and staying at the forefront of technology trends.</p>
-            </div>
-            <div class="featured-text-btn">
-                
-                <button class="btn" onclick="downloadCv()">Download CV <i class="uil uil-file-alt"></i></button>
-            </div>
-            <div class="social_icons">
+
+            <div class="footer-social-icons">
                 <a href="http://www.linkedin.com/in/sameeroddin-kazi"><div class="icon"><i class="uil uil-linkedin-alt" ></i></div></a>
                 <a href="https://github.com/S7M1R"><div class="icon"><i class="uil uil-github-alt"></i></div></a>
                 <a href="https://x.com/SameeroddinKazi?t=01cXHMrwjsR8M9wyQDZbRQ&s=09"><div class="icon"><i class="uil uil-twitter-alt"></i></div></a>
                 <a href="https://wa.me/+91-7620338237"><div class="icon"><i class="uil uil-whatsapp"></i></div></a>
             </div>
-          </div>
-          <div class="featured-image" id="im">
-            <div class="image">
-                <img th:src="@{/Images/image (13).png}" alt="avatar">
-            </div>
-          </div>
-          <div class="scroll-icon-box">
-            <a href="#Skills" class="scroll-btn">
-                <i class="uil uil-mouse-alt"></i>
-                <p>Scroll Down</p>
-            </a>
-          </div>
 
-       </section>
-       <!-- -------------- Skills BOX ---------------- -->
-       <section class="section" id="Skills">
-          <div class="top-header">
-            <h1>Skills</h1>
-          </div>
-          <div class="row">
-            <div class="col">
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Frontend</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Jsp - Jstl</span>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Backend</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>Java SDK 1.8, SDK 17</span>
-                        <span>OOPS</span>
-                        <span>J2ee</span>
-                        <span>JDBC</span>
-                        <span>jsp Servlet</span>
-                        <span id="sp">Spring Boot (Embedded-Tomcat)</span>
-                        <span>Spring Security</span>
-                        <span>Spring MVC Maven</span>
-                        <span>Spring Boot Microservices</span>
-                        <span>RESTful Webservices</span>
-                        <span>Spring Websocket</span>
-                        <span>Spring Actuator</span>
-                        <span>Apache Kafka</span>
-                        <span>Hibernate Jpa</span>
-                        <span>REST api</span>
-                        <span>Git & Github</span>
-                        <span>Agile (Scrum & Kanban)</span>
-                        <span>JIRA</span>
-                        <span>Debugging & TrubleShooting</span>
-                        <span>White Box Testing</span>
-                        <span>Junit</span>
-                        <span>Begginer AWS</span>
-                        <span>Begginer CI/CD</span>
-                        <span>Grafana</span>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Database</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>MySQL</span>
-                        <span>MongoDB</span>
-                    </div>
-                </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Sameeroddin Kazi</a> - All rights reserved</p>
             </div>
-          </div>
-       </section>
-
-       <!-- -------------- PROJECT BOX ---------------- -->
-
-       <section class="section" id="projects">
-          <div class="top-header">
-              <h1>Projects</h1>
-          </div>
-          <div class="project-container">
-            <div class="project-box">
-                <i class="uil uil-medkit"></i>
-                <h3>Health Services Application</h3>
-                <label>Healthcare & Management Application</label>
-                <button class="btn-project" onclick="HealthServicesView()">View More</button>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-plane-departure"></i>
-                <h3>Flyo</h3>
-                <label>Flight Reservation Application</label>
-                <button class="btn-project" onclick="FlightReservationApplicationView()">View More</button>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-estate"></i>
-                <h3>Real Estate Application</h3>
-                <label>Real-Estate & Property solutions</label>
-                <button class="btn-project" onclick="RealestateApplicationView()">View More</button>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-comments"></i>
-                <h3>Chat Application</h3>
-                <label>Real-Time Chatting Application</label>
-                <button class="btn-project" onclick="chatApplicationView()">View More</button>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-blogger-alt"></i>
-                <h3>Blogging Application</h3>
-                <label>Blogging Services Application</label>
-                <button class="btn-project" onclick="BlogApplicationView()">View More</button>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-clouds"></i>
-                <h3>Weather Update Application</h3>
-                <label>Realtime Weather Update Application</label>
-                <button class="btn-project" onclick="WeatherApplicationView()">View More</button>
-            </div>
-          </div>
-          
-       </section>
-
-       <!-- -------------- CONTACT BOX ---------------- -->
-
-       <section class="section" id="contact">
-          <div class="top-header">
-            <h1>Get in touch</h1>
-            <span>Ready to turn your vision into reality? Let's get started on your next big idea.</span>
-          </div>
-          <div class="contact_section">
-            <div class="row">
-             <div class="col">
-                <div class="contact-info">
-                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i>Email: contact.sameeroddinkazi@gamil.com</p>
-                    <p><i class="uil uil-phone"></i>Cantact No: +91 7620338237</p>
-                </div>
-             </div>
-             <div class="col">
-                <form action="sendEmail" method="post">
-                    <div class="form-control">
-                        <div class="form-inputs">
-                            <input type="text" class="input-field" placeholder="Your Name" name="Name">
-                            <input type="email" class="input-field" placeholder="Your Email" name="Email">
-                        </div>
-                        <div class="text-area">
-                            <textarea placeholder="Message" name="Message"></textarea>
-                        </div>
-                        <div class="form-button">
-                            <button class="btn" type="submit">Send <i class="uil uil-message"></i></button>
-                        </div>
-                    </div>
-                </form>
-             </div>
-          </div>
-          </div>
-       </section>
-
-    </main>
-
-
-    <!-- --------------- FOOTER --------------- -->
-    <footer>
-        <div class="top-footer">
-            <p>Sameeroddin Kazi</p>
-        </div>
-       
-        <div class="footer-social-icons">
-                <a href="http://www.linkedin.com/in/sameeroddin-kazi"><div class="icon"><i class="uil uil-linkedin-alt" ></i></div></a>
-                <a href="https://github.com/S7M1R"><div class="icon"><i class="uil uil-github-alt"></i></div></a>
-                <a href="https://x.com/SameeroddinKazi?t=01cXHMrwjsR8M9wyQDZbRQ&s=09"><div class="icon"><i class="uil uil-twitter-alt"></i></div></a>
-                <a href="https://wa.me/+91-7620338237"><div class="icon"><i class="uil uil-whatsapp"></i></div></a>
-        </div>
-            
-        <div class="bottom-footer">
-            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Sameeroddin Kazi</a> - All rights reserved</p>
-        </div>
-    </footer>
+        </footer>
 
     </div>
 
+   </div>
 
 
 
