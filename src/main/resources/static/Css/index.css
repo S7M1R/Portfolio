@@ -656,6 +656,9 @@ footer{
     }
     .featured-name{
         height: 27vh;
+        text-align:start;
+        word-spacing: normal;
+        line-height: 62px;
     }
     .featured-text-btn{
         width: 90vw;
